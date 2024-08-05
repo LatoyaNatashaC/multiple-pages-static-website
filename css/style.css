@@ -1,3 +1,109 @@
-body {
-  background: pink;
+:root {
+  --primary-color: #ec407e;
+  --secondary-color: #f5f2fe;
+  --Third-color: #195689;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --background-color: #fafafa;
+}
+.greeting-container {
+  text-align: center;
+  background-color: var(--background-color);
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: var(--box-shadow);
+}
+h1 {
+  font-size: 48px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  color: var(--Third-color);
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  font-size: 80px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #ec407e;
+}
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.about-heading {
+  font-size: 96px;
+  color: rgb(33, 37, 47);
+  color: var(--Third-color);
+}
+h3 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: var(--Third-color);
+  text-align: center;
+  margin: 0;
+}
+.about-paragraphs {
+}
+
+p {
+  display: block;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.contact {
+  margin-top: 30px;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--Third-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.img {
+  vertical-align: middle;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.homepage-container {
+  margin-right: 50px;
+  margin-left: 50px;
 }
