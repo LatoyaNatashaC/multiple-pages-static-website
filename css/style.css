@@ -1,41 +1,57 @@
 :root {
   --primary-color: #ec407e;
   --secondary-color: #f5f2fe;
-  --Third-color: #195689;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
   --background-color: #fafafa;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 .greeting-container {
   background-color: var(--background-color);
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 100%;
   box-shadow: var(--box-shadow);
 }
-h1 {
-  font-size: 48px;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  color: var(--Third-color);
 
+h1,
+h2,
+h3 {
   margin: 0;
 }
-h2 {
-  font-size: 80px;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  color: #ec407e;
+
+h1 {
+  font-size: 96px;
+  color: var(--primary-color);
 }
+
+h2 {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
+
 .navigation-links a {
   margin: 20px;
 }
+
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -45,6 +61,11 @@ h2 {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -52,43 +73,26 @@ h2 {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  box-shadow: var(--box-shadow);
 }
 
-.about-heading {
-  font-size: 96px;
-  color: rgb(33, 37, 47);
-  color: var(--Third-color);
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
 }
-h3 {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  color: var(--Third-color);
 
-  margin: 0;
-}
 .about-paragraphs {
   margin: 30px 0;
 }
+
 .about-paragraphs p {
   margin: 10px;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
-
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding: 20px;
-}
-.contact {
-  margin-top: 30px;
-}
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--Third-color);
+  color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
 }
@@ -96,15 +100,25 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-.img {
-  vertical-align: middle;
-}
 
-.homepage-container {
-  margin-right: 50px;
-  margin-left: 50px;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
